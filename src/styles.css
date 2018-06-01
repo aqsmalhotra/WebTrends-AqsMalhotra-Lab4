@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+
+/* Main Menu */
+.main_nav {
+  margin: 0 auto
+}
+
+.main_nav li {
+  float: left;
+  padding: 5px;
+  background: #C80031;
+  border-left: 1px dotted #fff;
+}
+
+.main_nav li:first-child {
+  border: none;
+}
+
+.main_nav li a {
+  display: block;
+  padding: 2px 20px;
+  color: #fff;
+}
+
+.main_nav li:hover {
+  background: #ffd9d9;
+  transition: ease-in .35s;
+  -moz-transition: ease-in .35s;
+  -webkit-transition: ease-in .35s;
+}
+
+.main_nav li:hover a {
+  color: #C80031;
+  transition: ease-in .35s;
+  -moz-transition: ease-in .35s;
+  -webkit-transition: ease-in .35s;
+}
+
+/* Main Menu Level 1 */
+.main_nav_sub_dropdown {
+  position: absolute;
+  width: 100px;
+  top: 41px;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-out .35s;
+  -moz-transition: ease-out .35s;
+  -webkit-transition: ease-out .35s;
+}
+
+.main_nav_nextsub {
+  left: -45px;
+  position: relative;
+  top: 0px;
+  width: 175px;
+  border-left: none !important;
+  border-bottom: 1px dotted #fff !important;
+}
+
+.main_nav_nextsub:last-child {
+  border: none !important;
+}
+
+.main_nav_sub:hover .main_nav_sub_dropdown,.main_nav_sub .main_nav_sub:hover .main_nav_sub_dropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: ease-in .35s;
+  -moz-transition: ease-in .35s;
+  -webkit-transition: ease-in .35s;
+}
+
+.main_nav li:hover ul a,.main_nav li:hover ul li ul li a {
+  color: #fff;
+}
+
+.main_nav li ul li:hover,.main_nav li ul li ul li:hover {
+  background: #ffd9d9;
+  transition: ease-in-out .35s;
+  -moz-transition: ease-in-out .35s;
+  -webkit-transition: ease-in-out .35s;
+}
+
+.main_nav li ul li:hover a,.main_nav li ul li ul li:hover a {
+  color: #C80031;
+  transition: ease-in-out .35s;
+  -moz-transition: ease-in-out .35s;
+  -webkit-transition: ease-in-out .35s;
+}
+
+/* Main Menu Level 2 */
+.main_nav_sub .main_nav_sub .main_nav_sub_dropdown .main_nav_nextsub {
+  left: 25px;
+  position: relative;
+  width: 165px;
+  top: 0px;
+}
+
+.main_nav_sub .main_nav_sub .main_nav_sub_dropdown {
+  position: absolute;
+  width: 150px;
+  left: 120px;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-out .35s;
+  -moz-transition: ease-out .35s;
+  -webkit-transition: ease-out .35s;
+}
